@@ -44,7 +44,7 @@ export default class ProductBreakdown extends React.Component {
                 className={ProductBreakdownCSS.characteristic_rating}
                 style={{ left: `${Math.round(25 * (value - 1))}%` }}
               >
-                <FontAwesomeIcon size="2xl" icon={faCaretDown} />
+                <FontAwesomeIcon size="2xl" className={ProductBreakdownCSS.caret} icon={faCaretDown} />
               </div>
               <div className={ProductBreakdownCSS.characteristic_bar}>
                 <div className={greyCharacteristicContainer} />

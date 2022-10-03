@@ -5,7 +5,7 @@
   height: fit-content;
   padding-bottom: 20px;
   margin-bottom: 5px;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid var(--textOne);
 
 }
 
@@ -13,12 +13,17 @@
   display: inline-flex;
 }
 
+.qbody {
+  position: relative;
+  margin-right: auto;
+}
+
 .interactions {
   position: relative;
+
 }
 
 .yesHelpful {
-  position: relative;
   text-decoration: underline;
   width: fit-content;
   height: fit-content;
@@ -29,7 +34,7 @@
   overflow: hidden;
   outline: none;
   opacity: 1;
-  color: blue;
+  color: var(--textTwo);
 }
 
 .addAnswerBtn {
@@ -44,7 +49,7 @@
   overflow: hidden;
   outline: none;
   opacity: 1;
-  color: blue;
+  color: var(--textTwo);
 }
 
 .answerQBtn {
@@ -58,5 +63,5 @@
   cursor: pointer;
   overflow: hidden;
   outline: none;
-  color: blue;
+  color: var(--textTwo);
 }

@@ -1,6 +1,25 @@
 body {
   font-family: 'Barlow Condensed', sans-serif !important;
 }
+
+.light {
+  --background: white;
+  --accent: lightseagreen;
+  --textOne: black;
+  --textTwo: gray;
+  background-color: var(--background);
+  color: var(--textOne);
+}
+
+.dark {
+  --background: #313131;
+  --accent: lightseagreen;
+  --textOne: white;
+  --textTwo: lightgrey;
+  background-color: var(--background);
+  color: var(--textOne);
+}
+
 .product-overview {
   border: 1px solid black;
   display: flex;

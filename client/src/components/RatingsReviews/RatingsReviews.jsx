@@ -261,12 +261,6 @@ class RatingsReviews extends React.Component {
               handleSort={this.handleSort}
             />
           </div>
-          {/* {numReviews > 0 ? (
-
-          )
-
-          } */}
-
           <div className={RatingsReviewsCSS.reviews_list}>
             <ReviewsList
               axiosConfig={axiosConfig}

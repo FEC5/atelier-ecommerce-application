@@ -9,7 +9,7 @@ import ProductInfo from './ProductInfo/ProductInfo.jsx';
 import ProductDescription from './ProductDescription/ProductDescription.jsx';
 import Modal from './Modal/Modal.jsx';
 
-export default function ProductOverview({ productId, sendInteraction }) {
+export default function ProductOverview({ productId, sendInteraction, theme, toggleTheme }) {
   const [product, setProduct] = useState({ features: [] });
   const [styles, setStyles] = useState([]);
   const [currentStyles, setCurrentStyles] = useState({});
@@ -66,7 +66,7 @@ export default function ProductOverview({ productId, sendInteraction }) {
         className={postyles.productoverview}
         onClick={(e) => sendInteraction('Product Overview', e)}
       >
-        <Nav />
+        <Nav theme={theme} toggleTheme={toggleTheme} />
         <Announcements />
         <ProductInfo
           averageRating={averageRating}

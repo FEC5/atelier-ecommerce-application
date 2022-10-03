@@ -1,6 +1,6 @@
 .rating {
   position: relative;
-  background-color: white;
+  background-color: --background;
   display: inline-flex;
   justify-content: space-around;
 }

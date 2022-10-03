@@ -55,5 +55,5 @@ html {
   padding: 0 15px;
 }
 .reviews {
-  color: black;
+  color: var(--textOne);
 }

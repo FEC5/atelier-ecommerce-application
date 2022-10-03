@@ -120,7 +120,7 @@ class AnswerModal extends React.Component {
       <div className={AModalCSS.modalBackground}>
         <form className={AModalCSS.modalContainer}>
           <div className={AModalCSS.exitButton}>
-            <button type="submit" className={AModalCSS.exitBtn} onClick={hideModal}>X</button>
+            <button type="submit" className={AModalCSS.exitBtn} onClick={hideModal}>CANCEL</button>
           </div>
           <h2 className={AModalCSS.title}>Submit Your Answer</h2>
           <h4 className={AModalCSS.subtitle}>

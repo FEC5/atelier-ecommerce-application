@@ -13,6 +13,6 @@
   overflow: hidden;
   outline: none;
   opacity: 1;
-  color: blue;
+  color: var(--textTwo);
 }
 /* //last touches */

@@ -7,7 +7,7 @@
 .qa_body {
   display: flex;
   flex-direction: column;
-  height: 500px;
+  max-height: 500px;
   width: 70%;
 }
 .container {
@@ -26,5 +26,5 @@
 }
 
 .askButton.hover {
-  background-color: darkseagreen;
+  background-color: lightslategray;
 }

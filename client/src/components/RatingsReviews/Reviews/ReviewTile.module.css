@@ -9,7 +9,7 @@
   cursor: pointer;
   overflow: hidden;
   outline: none;
-  color: blue;
+  color: var(--textTwo);
   padding: 0px;
 }
 

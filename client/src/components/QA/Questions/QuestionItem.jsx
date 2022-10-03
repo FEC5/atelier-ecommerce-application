@@ -99,7 +99,7 @@ class QuestionItem extends React.Component {
     return (
       <div className={QItemCSS.questionEach}>
         <div className={QItemCSS.container}>
-          <div style={{ fontWeight: 'bold' }}>
+          <div className={QItemCSS.qbody} style={{ fontWeight: 'bold' }}>
             Q:
             { question_body }
           </div>

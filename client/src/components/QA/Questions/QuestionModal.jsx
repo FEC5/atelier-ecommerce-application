@@ -80,7 +80,7 @@ class QuestionModal extends React.Component {
             className={QModalCSS.exitBtn}
             onClick={() => { toggleQModal(false); }}
           >
-            X
+            CANCEL
           </button>
           <h2>Ask Your Question</h2>
           <h4>
@@ -99,8 +99,8 @@ class QuestionModal extends React.Component {
                 maxLength="60"
                 size="50"
                 name="name"
-                required o
-                nChange={(e) => { this.handleChange(e); }}
+                required
+                onChange={(e) => { this.handleChange(e); }}
               />
               <div className={QModalCSS.security}>
                 <p>For privacy reasons, do not use your full name or email address.</p>

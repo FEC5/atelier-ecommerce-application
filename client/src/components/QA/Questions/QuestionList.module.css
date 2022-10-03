@@ -9,6 +9,10 @@
   overflow-y: auto;
 }
 
+::-webkit-scrollbar-track {
+  background: black;
+}
+
 .addQButton {
   position: relative;
   left: 45%;
@@ -26,7 +30,7 @@
 }
 
 .addQButton:hover {
-  background-color: lightslategray;
+  background-color: var(--textTwo);
 }
 
 .moreButton {
@@ -46,5 +50,5 @@
 }
 
 .moreButton:hover {
-  background-color: lightslategray;
+  background-color: var(--textTwo);
 }

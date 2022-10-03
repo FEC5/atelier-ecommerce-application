@@ -13,8 +13,10 @@ class App extends React.Component {
     super(props);
     this.state = {
       productId: 65633, // Pugs: 65633 // Shoes: 65635 //sales price: 65661
+      theme: true,
     };
     this.updateProductId = this.updateProductId.bind(this);
+    this.toggleTheme = this.toggleTheme.bind(this);
   }
 
   // componentDidMount() {
@@ -27,10 +29,17 @@ class App extends React.Component {
     });
   }
 
+  toggleTheme() {
+    const { theme } = this.state;
+    this.setState({
+      theme: !theme,
+    });
+  }
+
   render() {
-    const { productId } = this.state;
+    const { productId, theme } = this.state;
     return (
-      <div>
+      <div className={theme ? 'light' : 'dark'}>
         {/*
         <select value={productId} id="id-selector" onChange={(e) => { this.updateProductId(e.target.value); }}>
           <option value="65633">65633</option>
@@ -49,6 +58,8 @@ class App extends React.Component {
             <ProductOverview
               sendInteraction={sendInteraction}
               productId={productId}
+              toggleTheme={this.toggleTheme}
+              theme={theme}
               key={productId}
             />
           )}

@@ -1,5 +1,5 @@
 .answerItem {
-  border-bottom: 1px solid lightseagreen;
+  border-bottom: 1px solid var(--accent);
 }
 
 .imgContainer {
@@ -12,7 +12,8 @@
 }
 
 .interactions {
-
+  position: relative;
+  margin-left: 5px;
 }
 .yesHelpful {
   position: static;
@@ -26,7 +27,7 @@
   overflow: hidden;
   outline: none;
   opacity: 1;
-  color: blue;
+  color: var(--textTwo);
 }
 
 .reportBtn {
@@ -41,5 +42,5 @@
   overflow: hidden;
   outline: none;
   opacity: 1;
-  color: blue;
+  color: var(--textTwo);
 }
